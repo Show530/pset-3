@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class exercise4 {
+public class Exercise4 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Height:");
+        System.out.print("Height : ");
         float height =in.nextFloat()*2.54f;
-        System.out.println("Width:");
+        System.out.print("Width  : ");
         float width = in.nextFloat()*2.54f;
         float area =2f*(width)+2f*(height);
-        System.out.format("%,.2f square millimeters.", area);
+        System.out.printf("\n%,.2f centimeters.\n", area);
 
         in.close();
     }

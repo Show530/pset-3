@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class exercise9 {
+public class Exercise9 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Amount :");
+        System.out.print("Amount : ");
         float amount =in.nextFloat();
         int quarters = (int) (amount/.25);
         amount = (float) (amount % .25);
@@ -12,10 +12,10 @@ public class exercise9 {
         int nickles = (int) (amount/ .05);
         amount = (float) (amount % .05);
         int pennies = (int) (amount/0.01);
-        System.out.format("\nQuarters : " + quarters);
-        System.out.format("\nDimes : " + dimes);
-        System.out.format("\nNickles : " + nickles);
-        System.out.format("\nPennies : " + pennies);
+        System.out.print("\nQuarters : " + quarters);
+        System.out.print("\nDimes    : " + dimes);
+        System.out.print("\nNickles  : " + nickles);
+        System.out.println("\nPennies  : " + pennies);
         in.close();
     }
 }
